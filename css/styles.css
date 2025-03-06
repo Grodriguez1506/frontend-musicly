@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Musicly";
+    src: url(./fonts/WindSong-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Musicly";
+    src: url(./fonts/WindSong-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+body{
+    background: #222 !important;
+    font-family: "Poppins" !important;
+}
+
+a{
+    cursor: pointer;
+}
+
+main{
+    min-height: 630px;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+.welcomeText{
+    display: block;
+    color: white;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+.separator {
+    width: 1px;
+    height: 25px;
+    margin: 0px 5px;
+    background-color: white;
+}
+
+.musiclyLogo{
+    font-family: "Musicly";
+    font-size: 60px;
+}
+
+#loginForm,
+#registerForm{
+    width: 60%;
+    height: auto;
+    background-color: #515151;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form-floating > input:focus {
+    box-shadow: none;
+}
+
+.grid-menu{
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.grid-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.grid-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    cursor: pointer;
+    transition: all 300ms;
+    will-change: transform;
+}
+
+.grid-item > img:hover{
+    transform: scale(1.2);
+}
+
+.grid-item > h1 {
+    position: absolute;
+    z-index: 1;
+    margin: 5px;
+    color: white;
+    text-shadow: 0px 0px 1px black,
+                 0px 0px 2px black,
+                 0px 0px 3px black,
+                 0px 0px 4px black,
+                 0px 0px 5px black;
+}
+
+.artists{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.playlist{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.profile{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.followedArtist{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.sideInfoBar{
+    background-color: rgba(255, 255, 255, 0.107);
+    width: 250px;
+    min-height: 650px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+#profileCard{
+    background-color: #222;
+    color: white;
+    padding: 5px;
+}
+
+#profileCard > img{
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+.username,
+.names{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.playlistsAccordion{
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.accordion-item,
+.accordion-header,
+.accordion-button{
+    background-color: #222 !important;
+    color: white !important;
+    border: none !important;
+    border-bottom: 1px solid white;
+}
+
+.accordion-button:hover{
+    background-color: rgba(255, 255, 255, 0.452) !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.songList{
+    list-style: none;
+}
+
+.linkSong{
+    color: white;
+    text-decoration: none;
+}
+
+.linkSong:hover{
+    text-decoration: underline;
+}
